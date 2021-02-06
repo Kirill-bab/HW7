@@ -6,6 +6,17 @@ namespace RequestProcessor.App.Models
     class RequestOptions : IRequestOptions, IResponseOptions
     {
         [JsonPropertyName("path")]
+        public string OptionalPath 
+        { 
+            get 
+            { 
+                return Path; 
+            } 
+            set 
+            {
+                Path = value.Replace('.', '_') + ".txt"; 
+            } 
+        }
         public string Path { get; set; }
 
         [JsonPropertyName("name")]

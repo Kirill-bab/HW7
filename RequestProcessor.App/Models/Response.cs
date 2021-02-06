@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace RequestProcessor.App.Models
 {
     class Response : IResponse
