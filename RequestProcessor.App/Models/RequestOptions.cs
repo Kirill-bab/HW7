@@ -17,6 +17,7 @@ namespace RequestProcessor.App.Models
                 Path = value.Replace('.', '_') + ".txt"; 
             } 
         }
+        
         public string Path { get; set; }
 
         [JsonPropertyName("name")]
